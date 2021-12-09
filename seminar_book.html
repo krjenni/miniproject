@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title></title>
+    </head>
+    <body bgcolor="#f25c5d">
+        <h1 id="h1" style="text-align: center;">Seminar Hall Booking</h1>
+      <div style="text-align: center;" >
+    <nav style="align-items: center;" class="navbar navbar-expand-lg navbar-light bg-light" id="nav1">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+           <ul class="navbar-nav mr-auto">
+             <li class="nav-item active">
+               <a class="nav-link" href="/">Home </a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="/index">Register</a>
+             </li>
+             <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" href="#Contact" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 Contact
+               </a>
+               
+             </li>
+             <li class="nav-item">
+               <a class="nav-link disabled" href="/gallery" tabindex="-1" aria-disabled="true">Gallery</a>
+             </li>
+             <li class="nav-item active">
+                <a class="nav-link" href="/seminarbook">Book seminar </a>
+              </li>
+           </ul><br><br>
+          
+         </div>
+       </nav>
+        <h1 >Seminar hall booking</h1>
+        <form action="/booked"  method="POST">
+            <label>Choose a seminar hall:</label>
+            <select name="hname" id="hname" required>
+                <option value="seminar hall-1">Seminar Hall-1</option>
+                <option value="seminar hall-2">Seminar Hall-2</option>
+                <option value="seminar hall-3">Seminar Hall-3</option>
+                
+              </select>
+              <br><br>
+              <label >Choose Date:</label>
+                <input type="date" id ="date" name = "date" required>
+                <br><br>
+                <label>Choose a time slot:</label>
+                
+
+                <select id ="time" name="time" required>
+                    <option value="slot-1" >10am - 1pm</option>
+                    <option value="slot-2">3pm - 5pm</option>
+                    <option value="slot-3">6pm - 8pm</option>
+                    
+                  </select> 
+                  <br><br>
+                  <input type="submit" value="Submit" id="submit"/>
+        </form>
+        <style>
+            #nav1{
+            position:sticky  ;
+          }
+          ul{
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+              overflow: hidden;
+              background-color: #333;
+            }
+    
+            li {
+              float: left;
+            }
+    
+            li a {
+              display: block;
+              color: white;
+              text-align: center;
+              padding: 14px 16px;
+              text-decoration: none;
+            }
+    
+            /* Change the link color to #111 (black) on hover */
+            li a:hover {
+              background-color: #111;
+            }
+            #h1
+            {
+                color: white;
+                font-size: 50px;
+                background-color: black;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                
+            }
+    
+        </style>
+    </body>
+</html>

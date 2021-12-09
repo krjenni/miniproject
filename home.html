@@ -1,0 +1,179 @@
+<html>
+  <head>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" 
+    crossorigin="anonymous"></script>
+    <title></title>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@16/umd/react.development.js">
+    </script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+    
+  </head>
+  
+  <body bgcolor="lightblue">
+      <h1 id="h1" style="text-align: center;">Seminar Hall Booking</h1>
+      <div style="text-align: center;" >
+      <nav style="align-items: center;" class="navbar navbar-expand-lg navbar-light bg-light" id="nav1">
+       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/">Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/index">Register</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href=""  id="con" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Contact
+              </a>
+              
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="/gallery" tabindex="-1" aria-disabled="true">Gallery</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="/seminarbook">Book seminar </a>
+            </li>
+          </ul><br><br>
+          
+        </div>
+      </nav>
+      </div>
+
+      <div class="bg_image" style="text-align: center;"><h1>Welcome to Seminar hall Booking</h1><br><br><h6>Find the right seminar hall near you</h6></div>
+      <br>
+      <br>
+      <div class="about" style="text-align: center;">All about us <br><br>
+        <div class="inside">When we look back, we always realize that over the last century, it seems like a million things have changed and the most important thing, which lies amongst them is, how we do businesses now! So, when you're planning for any corporate social seminars in Bangalore remember to choose a perfect venue, as opting for the right venue can lift up things to a whole new level. We understand it's not easy to select a perfect venue so for your help here we have the largest venue aggregation, recommend</div></div>
+      <br>
+      <br>
+        <div class="Contact">
+          
+          <table cellpadding = 100>
+              <tr>
+                  <td><div class="contact"><h1>Contact Us</h1>
+                      <br><br>
+                      Hoskerehalli,BSK III Stage, Bangalore.
+                      <br><br>
+                      book.seminarhall@gmail.com
+                      <br><br>
+                      9078292729
+                  </div></td>
+                  
+          <td>
+            <label>Name*</label><br><br>
+            <input type="text" placeholder="Enter your Name" required><br><br>
+            <label>Address*</label><br><br>
+            <textarea placeholder="Enter your Address" cols="40" rows="5" required></textarea><br><br>
+            <label>Email id*</label><br><br>
+            <input type="text" placeholder="Enter your email id" required><br><br>
+            <label>Ph no.*</label><br><br>
+            <input type="text" placeholder="Enter your phone number" required><br><br>     
+            <label>Subject</label><br><br>
+            <textarea placeholder="Enter the subject" cols="20" rows="2"></textarea><br><br>      
+            <label>Message</label><br><br>
+            <textarea placeholder="Type your address here..." cols="40" rows="6" ></textarea><br><br>
+            <input  type="submit" value="Submit" >
+          </td>
+
+        </tr>
+        </table>
+      </div>
+    <style>
+      #nav1{
+        position:sticky  ;
+      }
+      ul{
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+        }
+
+        li {
+          float: left;
+        }
+
+        li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+
+        /* Change the link color to #111 (black) on hover */
+        li a:hover {
+          background-color: #111;
+        }
+        #h1
+        {
+            color: white;
+            font-size: 50px;
+            background-color: black;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .about{
+            color: black;
+            font-size: 50px;
+            background-color: cornflowerblue;
+        }
+        .image
+        {
+            background-image: "url('idli.jpg')";
+        }
+       .bg_image{
+            background-image: url("image.jfif");
+            /* background-color: violet; */
+            font-size: xx-large;
+            color: white;
+          background-size: cover;
+          height: 500px;
+          color: "#f5f5f5";
+        }
+        .contact{
+            background-color: cornflowerblue;
+            font-size: large;
+            color: white;
+        }
+        .inside{
+          color: black;
+          font-size: 25px;
+        }
+    </style>
+    <div id="root"></div>
+    
+    <script type="text/babel"></script>
+      
+ <script>
+  
+        $(document).ready(function() {
+            $("#con").click(function() {
+                $(document).scrollTop($(document).height());
+                
+  
+            });
+        });
+    
+ </script>
+    
+ 
+
+
+
+
+</body>
+</html>        
+
+
+
+
+
+
+

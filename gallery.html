@@ -1,0 +1,136 @@
+<html>
+  <head>
+    <title></title>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@16/umd/react.development.js">
+    </script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+    
+  </head>
+  <body bgcolor="#f48fb1">
+    <h1 id="h1" style="text-align: center;">Seminar Hall Booking</h1>
+        <nav style="align-items: center;" class="navbar navbar-expand-lg navbar-light bg-light" id="nav1">
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="/">Home </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/index">Register</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#Contact" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Contact
+                </a>
+                
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="/gallery" tabindex="-1" aria-disabled="true">Gallery</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="/seminarbook">Book seminar </a>
+              </li>
+            </ul><br><br>
+            
+          </div>
+        </nav>
+        <h1 id="heading" style="text-align: center;color:red">Some of our Best Seminar Halls</h1>
+      <div style="text-align: center;" >
+        </div>
+    <style>
+        #nav1{
+        position:sticky  ;
+      }
+      ul{
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+        }
+
+        li {
+          float: left;
+        }
+
+        li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+
+        /* Change the link color to #111 (black) on hover */
+        li a:hover {
+          background-color: #111;
+        }
+        #h1
+        {
+            color: white;
+            font-size: 50px;
+            background-color: black;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            
+        }
+
+    </style>
+    <div id="root"></div>
+    <script type="text/babel">
+        
+        class Hall1 extends React.Component{
+        render(){
+          return(
+              <div>
+              <table cellpadding = "50">
+                <tr>
+                    <td>
+                <img src="h1.jfif" alt="" height="300" width="300"></img>
+                </td>
+                 <td>
+                <img src="h2.jfif" alt="" height="300" width="300"></img>
+                </td>
+                <td>
+                <img src="h3.jfif" alt="" height="300" width="300"></img>
+            </td>
+                </tr>
+                <tr>
+                    <td>
+                <img src="h4.jfif" alt="" height="300" width="300"></img>
+                </td>
+                 <td>
+                <img src="h5.jfif" alt="" height="300" width="300"></img>
+                </td>
+                <td>
+                <img src="h6.jfif" alt="" height="300" width="300"></img>
+            </td>
+             </tr>
+            
+                <tr>
+                    <td>
+                <img src="h7.jfif" alt="" height="300" width="300"></img>
+                </td>
+                 <td>
+                <img src="h8.jfif" alt="" height="300" width="300"></img>
+                </td>
+                <td>
+                <img src="h9.jfif" alt="" height="300" width="300" ></img>
+            </td>
+             </tr>
+                
+            </table>
+                </div>
+          );
+                
+          
+        }}
+    
+        ReactDOM.render(<Hall1 />, document.getElementById("root"));
+    </script>
+  </body>
+</html>
